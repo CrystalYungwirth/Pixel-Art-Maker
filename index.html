@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Project 3 Pixel Art Maker</title>
+  <title>Pixel Art Maker!</title>
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <html>
+
+<body>
+  <header class="oregon-trail-header">The Oregon Trail of Pixels</header>
+
+  <div class="store">
+    <div>
+      <h2 class="order-header">Crystal's General Store</h2>
+      <form class="order-form" id="sizePicker">
+        <table id="crystalsGeneralStore">
+          <thead>
+            <tr>
+              <td>Max</td>
+              <td>Buy</td>
+              <td>Item</td>
+              <td>Price</td>
+              <td>Cost</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <input type="text" class="max" value="1" name="max" readonly/></td>
+              <td><input type="radio" class="buy" id="huntingBackground" value="1" name="buy" onchange="canvasImage()" /></td>
+              <td><input type="text" class="item" value="Hunting" name="item" readonly/></td>
+              <td><input type="text" class="unit-price" value="50" name="price" readonly/></td>
+              <td><input type="text" class="cost" value="0" name="cost" readonly/></td>
+            </tr>
+            <tr>
+              <td>
+                <input type="text" class="max" value="1" name="max" readonly/></td>
+              <td><input type="radio" class="buy" id="riverBackground" value="1" name="buy" /></td>
+              <td><input type="text" class="item" value="Raft the Columbia River" name="item" readonly/></td>
+              <td><input type="text" class="unit-price" value="50" name="price" readonly/></td>
+              <td><input type="text" class="cost" value="0" name="cost" readonly/></td>
+            </tr>
+            <tr>
+              <td><input type="text" class="max" value="1" name="max" readonly/></td>
+              <td><input type="radio" class="buy" id="willametteBackground" value="1" name="buy" /></td>
+              <td><input type="text" class="item" value="Willamette Valley" name="item" readonly/></td>
+              <td><input type="text" class="unit-price" value="50" name="price" readonly/></td>
+              <td><input type="text" class="cost" value="0" name="cost" readonly/></td>
+            </tr>
+            <tr>
+              <td><input type="text" class="max" value="250" name="max" readonly/></td>
+              <td><input type="number" class="buy" id="inputHeight" min="100" max="250" placeholder="100" name="buy" /></td>
+              <td><input type="text" class="item" value="Height" name="item" readonly/></td>
+              <td><input type="text" class="unit-price" value="2.20" name="price" readonly /></td>
+              <td><input type="text" class="cost" value="0" name="cost" readonly/></td>
+            </tr>
+            <tr>
+              <td><input type="text" class="max" value="250" name="max" readonly/></td>
+              <td><input type="number" class="buy" id="inputWeight" min="100" max="250" placeholder="100" name="buy" /></td>
+              <td><input type="text" class="item" value="Width" name="item" readonly/></td>
+              <td><input type="text" class="unit-price" value="2.20" name="price" readonly/></td>
+              <td><input type="text" class="cost" value="0" name="cost" readonly/></td>
+            </tr>
+            <tr>
+              <td><input type="text" class="max" value="1" name="max" readonly/></td>
+              <td><input type="checkbox" class="buy" id="dysentery" value="" name="buy" /></td>
+              <td><input type="text" class="item" value="Dysentery Mode" name="item" readonly/></td>
+              <td><input type="text" class="unit-price" value="FREE!" name="price" readonly/></td>
+              <td><input type="text" class="cost" value="0" name="cost" readonly/></td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td><input type="text" class="total" value="" readonly/></td>
+            </tr>
+          </tfoot>
+        </table>
+    </div>
+    <div class="order-menu">
+      <input type="button" class="actions" id="explainButton" value="Explain">
+      <input type="submit" class="actions" value="Buy">
+      <input type="color" id="colorPicker" class="hidden">
+      <input type="button" class="actions" value="Color" id="colorButton">
+    </div>
+    </form>
+  </div>
+  </div>
+
+  <div class="grid-container">
+    <table class="pixel-canvas" id="pixelCanvas"></table>
+  </div>
+  <script src="designs.js"></script>
+</body>
+
+</html>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/sweetalert2'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

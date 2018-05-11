@@ -1,0 +1,169 @@
+/*-----------------------------------*\
+  #Basic Page Setup
+\*-----------------------------------*/
+
+:root {
+  --sweet-corn: #fcf488;
+  --antique-white: #fae4d4;
+  --blue: #2123fa;
+}
+
+html {
+  max-height: 100%;
+}
+
+body {
+  font-family: "Share Tech Mono", monospace;
+  background-color: var(--antique-white);
+  margin: 1%;
+  min-height: 100%;
+}
+
+
+/*-----------------------------------*\
+  #Order Form
+\*-----------------------------------*/
+
+.oregon-trail-header {
+  background-color: rgb(24,210,3);
+  border: 1px solid black;
+  font-size: 4rem;
+  text-align: center;
+  width: 100%;
+}
+
+.store {
+  background-image: url(http://res.cloudinary.com/dacjqekio/image/upload/v1523246377/PAM_Oregon_Trail_Store.png);
+  border: 1px solid black;
+  background-repeat: no-repeat;
+  height: 550px;
+  float: left;
+  position: relative;
+  width: 40%;
+}
+
+.order-form,
+.order-header,
+.order-menu{
+  background-color: var(--sweet-corn);
+}
+
+.order-header {
+  border-top: 1px solid black;
+  border-radius: 15px 15px 0 0;
+  text-align: center;
+  position: relative;
+  float: right;
+  top: 230px;
+  width: 352px;
+}
+
+.order-header:before {
+  background-color: #e2db7c;
+  /* change border to only being on top and right side */
+  border-top: 2px solid #000;
+  border-radius: 10px 15px 0 0;
+  content: "";
+  float: left;
+  margin-top: 3%;
+  padding: 1.5%;
+  width: 3.5%;
+  height: 5px;
+}
+
+.order-form {
+  position: relative;
+  float: right;
+  top: 230px;
+  height: 250px;
+  padding-top: 3%;
+}
+
+.order-form table tbody td {
+  line-height: 1;
+}
+input[type="number"],
+input[type="text"],
+input[type="checkbox"],
+input[type="radio"],
+textarea {
+  background-color: inherit;
+}
+
+.buy,
+.cost,
+.max,
+.total,
+.unit-price {
+  background-color: inherit;
+  max-width: 40px;
+  text-align: right;
+}
+
+.item {
+  max-width: 150px;
+}
+.cost,
+.item
+.max,
+.total,
+.unit-price {    
+  -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.order-menu {
+  background-color: var(--sweet-corn);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+}
+
+.actions {
+  background-image: url(http://res.cloudinary.com/dacjqekio/image/upload/v1523158341/15231581956025483.png);
+  background: 100% 100% cover no-repeat;
+  font-family: inherit;
+  width: 135px;
+  height: 60px;
+  background-color: rgba(0,0,0,0);
+  border: none;
+}
+
+.hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/*-----------------------------------*\
+  #Pixel Canvas
+\*-----------------------------------*/
+
+.pixel-canvas {
+  border-collapse: collapse;
+  background:  center / cover no-repeat url(http://res.cloudinary.com/dacjqekio/image/upload/v1523393163/Independence.png);
+  background-size: 100% 100%;
+  position: relative;
+  float: right;
+  height: 550px;
+  width: 59.75%;
+  font-size: 0;
+}
+
+
+.pixel-canvas tr td {
+  border: 1px solid grey;
+  padding: 0;
+  color: rgba(0,0,0,0);
+}
+
+/* disable highlight on mouseover */
+td::selection {
+  background-color: rgba(0,0,0,0);
+}
