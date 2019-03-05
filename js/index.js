@@ -15,7 +15,7 @@ const WILLAMETTE_BACKGROUND = document.querySelector("#willametteBackground");
 HUNTING_BACKGROUND.addEventListener(
   "change",
   function() {
-    TABLE.css("background-image","url(http://res.cloudinary.com/dacjqekio/image/upload/v1523480547/Hunting.png)");
+    TABLE.css("background-image","url(https://res.cloudinary.com/dacjqekio/image/upload/v1523480547/Hunting.png)");
     $(".cost").val(0)
   },
   false
@@ -26,7 +26,7 @@ RIVER_BACKGROUND.addEventListener(
   function() {
     TABLE.css(
       "background-image",
-      "url(http://res.cloudinary.com/dacjqekio/image/upload/v1523392532/Columbia_River2.png)"
+      "url(https://res.cloudinary.com/dacjqekio/image/upload/v1523392532/Columbia_River2.png)"
     );
     $('.cost').val(0);
   },
@@ -38,7 +38,7 @@ WILLAMETTE_BACKGROUND.addEventListener(
   function() {
     TABLE.css(
       "background-image",
-      "url(http://res.cloudinary.com/dacjqekio/image/upload/v1523392861/Willamette_Valley.png)"
+      "url(https://res.cloudinary.com/dacjqekio/image/upload/v1523392861/Willamette_Valley.png)"
     );
     $('.cost').val(0);
   },
@@ -129,7 +129,7 @@ $("#dysentery").change(function() {
             showConfirmButton: false,
             width: 1900,
             imageUrl:
-              "http://res.cloudinary.com/dacjqekio/image/upload/v1523480544/Tombstone.png",
+              "https://res.cloudinary.com/dacjqekio/image/upload/v1523480544/Tombstone.png",
             imageHeight: 500,
             imageAlt: "You have died of dysentery.",
             timer: 5000,
