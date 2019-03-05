@@ -33,13 +33,12 @@ body {
 }
 
 .store {
-  background-image: url(http://res.cloudinary.com/dacjqekio/image/upload/v1523246377/PAM_Oregon_Trail_Store.png);
+  background: no-repeat center/100% url(https://res.cloudinary.com/dacjqekio/image/upload/v1523246377/PAM_Oregon_Trail_Store.png);
   border: 1px solid black;
-  background-repeat: no-repeat;
-  height: 550px;
+  height: 69vh;
   float: left;
   position: relative;
-  width: 40%;
+  width: 38.5vw;
 }
 
 .order-form,
@@ -103,6 +102,7 @@ textarea {
 .item {
   max-width: 150px;
 }
+
 .cost,
 .item
 .max,
@@ -115,15 +115,17 @@ textarea {
 }
 
 .order-menu {
-  background-color: var(--sweet-corn);
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 80px;
+  position: fixed;
+  bottom: 20%;
+  width: 34.5vw;
+  left: 0;
+  margin-left: 1%;
+  padding: 1% 2%;
 }
 
 .actions {
-  background-image: url(http://res.cloudinary.com/dacjqekio/image/upload/v1523158341/15231581956025483.png);
+  /* I don't know why, but if background-image is added to background, it doesn't display */
+  background-image: url(https://res.cloudinary.com/dacjqekio/image/upload/v1523158341/15231581956025483.png);
   background: 100% 100% cover no-repeat;
   font-family: inherit;
   width: 135px;
@@ -147,7 +149,7 @@ textarea {
 
 .pixel-canvas {
   border-collapse: collapse;
-  background:  center / cover no-repeat url(http://res.cloudinary.com/dacjqekio/image/upload/v1523393163/Independence.png);
+  background:  center / cover no-repeat url(https://res.cloudinary.com/dacjqekio/image/upload/v1523393163/Independence.png);
   background-size: 100% 100%;
   position: relative;
   float: right;
