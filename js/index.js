@@ -71,8 +71,8 @@ const makeGrid = () => {
   //Max height & width for pixel canvas
   const GRID_HEIGHT = $("#gridContainer").height();
   const GRID_WIDTH = $("#gridContainer").width();
-  let max = 99;
-  let min = 1;
+  let max = 50;
+  let min = 40;
 
   TABLE.empty();
 
@@ -124,7 +124,7 @@ $("#dysentery").change(function() {
   if ($(this).is(":checked")) {
 //TODO: Figure out how to unhighlight popup automatically
     function openSwal() {
-      swal({
+      Swal.fire({
             title: "",
             showConfirmButton: false,
             width: 1900,
@@ -132,7 +132,7 @@ $("#dysentery").change(function() {
               "https://res.cloudinary.com/dacjqekio/image/upload/v1523480544/Tombstone.png",
             imageHeight: 500,
             imageAlt: "You have died of dysentery.",
-            timer: 5000,
+            timer: 4000,
           }).then(function() {
             window.location.reload(true);
           })
@@ -140,7 +140,7 @@ $("#dysentery").change(function() {
     TABLE.on("mouseover", "td", function() {
       $(this).each(function() {
         let death = $(this).html();
-        if (death === "40" && isDown === true) {
+        if (death === "42" && isDown === true) {
           openSwal()
         }
       });
@@ -149,7 +149,7 @@ $("#dysentery").change(function() {
     TABLE.on("click", "td", function() {
       $(this).each(function() {
         let death = $(this).html();
-        if (death === "40") {
+        if (death === "42") {
           openSwal()
         }
       });
@@ -208,7 +208,7 @@ items.each(function(index) {
  *@description Explain button
  */
 document.getElementById("explainButton").addEventListener("click", function() {
-  swal({
+  Swal.fire({
   type: "info",
   html:
     '<h5><a href="https://www.hmhco.com/oregon-trail">The Oregon Trail&reg;</a> Themed</h5>' +
